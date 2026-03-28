@@ -1,0 +1,118 @@
+:root{--bg:#09090b;--bg2:#111113;--card:#18181b;--card2:#1c1c20;--accent:#dc2626;--gold:#ca8a04;--text:#e4e4e7;--muted:#71717a;--subtle:#27272a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(9,9,11,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--subtle);padding:14px 0}
+nav .inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 24px}
+nav .logo{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:3px;color:var(--accent);text-decoration:none}
+nav .links{display:flex;gap:24px}
+nav .links a{color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.2s}
+nav .links a:hover{color:#fff}
+.menu-btn{display:none;background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer}
+section,.page-content{max-width:1100px;margin:0 auto;padding:80px 24px}
+.stitle{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.sheading{font-family:'Bebas Neue',sans-serif;font-size:40px;letter-spacing:2px;color:#fff;margin-bottom:32px}
+.btn-pill{display:inline-block;padding:10px 24px;font-size:12px;font-weight:600;text-decoration:none;border-radius:999px;transition:all 0.2s;letter-spacing:0.5px}
+.btn-w{background:#fff;color:#000}.btn-w:hover{background:var(--accent);color:#fff}
+.btn-o{border:1px solid var(--subtle);color:#fff}.btn-o:hover{border-color:var(--accent);color:var(--accent)}
+.songs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.song-card{background:var(--card);border:1px solid var(--subtle);border-radius:20px;padding:24px;display:flex;flex-direction:column}
+.song-card .top{display:flex;justify-content:space-between;align-items:start;margin-bottom:8px}
+.song-type{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+.song-card h3{font-size:22px;font-weight:700;margin:4px 0}
+.song-card h3 a{text-decoration:none;color:#fff;transition:color 0.2s}
+.song-card h3 a:hover{color:var(--accent)}
+.song-card .theme{font-size:13px;color:var(--muted);margin-bottom:14px}
+.song-card .excerpt{background:var(--bg);border:1px solid var(--subtle);border-radius:12px;padding:14px 16px;font-size:14px;font-style:italic;color:#a1a1aa;line-height:1.7;margin-bottom:16px;flex-grow:1}
+.song-card .slinks{display:flex;gap:8px;flex-wrap:wrap}
+.song-card .slinks a{padding:8px 18px;font-size:12px;font-weight:600;text-decoration:none;border-radius:999px;transition:all 0.2s}
+.link-yt{background:#fff;color:#000}.link-yt:hover{background:var(--accent);color:#fff}
+.link-other{border:1px solid var(--subtle);color:#fff}.link-other:hover{border-color:var(--accent);color:var(--accent)}
+.album-badge{display:inline-block;background:var(--accent);color:#fff;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:8px}
+.video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+.vid-card{background:var(--card);border:1px solid var(--subtle);border-radius:16px;overflow:hidden}
+.vid-card .embed{position:relative;padding-top:56.25%}
+.vid-card .embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+.vid-card .vinfo{padding:14px 16px}
+.vid-card .vinfo h3{font-size:16px;font-weight:700}
+.vid-card .vinfo p{font-size:12px;color:var(--muted);margin-top:2px}
+.awards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.award{background:var(--card);border:1px solid var(--subtle);border-radius:14px;padding:18px;border-left:3px solid var(--gold)}
+.award .atag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.award .aname{font-size:14px;font-weight:600;color:#e4e4e7}
+.award .acat{font-size:12px;color:var(--muted);margin-top:2px}
+.award-minor{border-left-color:var(--subtle)}.award-minor .atag{color:var(--muted)}.award-minor .aname{color:#a1a1aa;font-weight:400}
+.a12-banner{background:linear-gradient(135deg,var(--accent),#7f1d1d);border-radius:20px;padding:48px;text-align:center;position:relative;overflow:hidden;margin-bottom:32px}
+.a12-banner::after{content:'12';position:absolute;right:-10px;top:-20px;font-family:'Bebas Neue',sans-serif;font-size:180px;color:rgba(255,255,255,0.05)}
+.a12-banner h2{font-family:'Bebas Neue',sans-serif;font-size:56px;letter-spacing:6px;color:#fff;position:relative}
+.a12-banner p{color:rgba(255,255,255,0.75);font-size:14px;position:relative}
+.connect-grid{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.connect-grid a{padding:12px 28px;border:1px solid var(--subtle);color:#fff;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border-radius:999px;transition:all 0.2s}
+.connect-grid a:hover{border-color:var(--accent);color:var(--accent)}
+footer{text-align:center;padding:40px 24px;border-top:1px solid var(--subtle)}
+footer .flogo{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:3px;color:#27272a}
+footer p{font-size:11px;color:#3f3f46;margin-top:4px}
+
+/* Section reveal animations */
+section{opacity:1;transform:translateY(0);transition:opacity 0.7s ease,transform 0.7s ease}
+
+/* Song card hover glow */
+.song-card{transition:border-color 0.3s,box-shadow 0.3s,transform 0.3s}
+.song-card:hover{border-color:#333;box-shadow:0 8px 32px rgba(0,0,0,0.4);transform:translateY(-2px)}
+
+/* Poster hover glow */
+.poster-img{transition:box-shadow 0.3s,border-color 0.3s}
+.poster-item:hover .poster-img{box-shadow:0 8px 28px rgba(220,38,38,0.15);border-color:#444}
+
+/* Video card hover */
+.vid-card{transition:border-color 0.3s,transform 0.3s}
+.vid-card:hover{border-color:#333;transform:translateY(-2px)}
+
+/* Award card hover */
+.award{transition:border-color 0.3s,transform 0.2s}
+.award:hover{transform:translateY(-2px)}
+
+/* Connect link hover glow */
+.connect-grid a{transition:all 0.3s}
+.connect-grid a:hover{box-shadow:0 0 20px rgba(220,38,38,0.15)}
+/* Lyrics page */
+.lyric-line{font-size:16px;line-height:1.8;color:#e4e4e7;font-family:'Noto Sans Telugu','DM Sans',sans-serif;margin-bottom:2px}
+.lyric-trans{font-size:13px;color:#71717a;font-style:italic;margin-bottom:16px;padding-left:2px}
+.lyric-break{height:20px}
+.song-hero{padding-top:120px;padding-bottom:40px}
+.song-hero .back{font-size:13px;color:var(--muted);text-decoration:none;display:inline-block;margin-bottom:20px;transition:color 0.2s}
+.song-hero .back:hover{color:var(--accent)}
+.song-meta{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 24px}
+.song-meta a{padding:10px 22px;font-size:12px;font-weight:600;text-decoration:none;border-radius:999px;transition:all 0.2s}
+@media(max-width:768px){
+  .songs-grid{grid-template-columns:1fr}
+  .video-grid{grid-template-columns:1fr}
+  nav .links{display:none;position:absolute;top:100%;left:0;width:100%;background:var(--bg);flex-direction:column;padding:16px 24px;gap:16px;border-bottom:1px solid var(--subtle)}
+  nav .links.open{display:flex}
+  .menu-btn{display:block}
+  .hero-grid{grid-template-columns:1fr !important}
+}
+
+/* Poster Gallery - Premium Carousel */
+.carousel-wrap{position:relative;padding:0 24px}
+.carousel-wrap:hover .carousel-arrow{opacity:1}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-70%);z-index:10;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,0.7);border:1px solid #333;color:#fff;font-size:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s,background 0.2s;backdrop-filter:blur(4px)}
+.carousel-arrow:hover{background:var(--accent)}
+.carousel-left{left:12px}
+.carousel-right{right:12px}
+.poster-track{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;cursor:grab;padding:0 0 8px}
+.poster-track::-webkit-scrollbar{display:none}
+.poster-item{display:block;text-decoration:none;flex-shrink:0;width:200px;transition:transform 0.3s}
+.poster-item:hover{transform:translateY(-6px)}
+.poster-img{width:200px;height:280px;border-radius:12px;background-color:var(--card);background-size:cover;background-position:center;border:1px solid var(--subtle);position:relative;overflow:hidden}
+.poster-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;color:var(--accent);padding:20px;line-height:1.1;background:linear-gradient(135deg,var(--card),#1e1e24);z-index:0}
+.poster-img[style*="url"]>.poster-fallback{z-index:-1}
+.poster-title{font-size:14px;font-weight:700;color:#fff;margin-top:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.poster-sub{font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:0.5px}
+@media(max-width:768px){
+  .carousel-arrow{width:36px;height:36px;font-size:22px;opacity:0.7}
+  .poster-item{width:160px}
+  .poster-img{width:160px;height:224px}
+  .poster-fallback{font-size:22px}
+}
